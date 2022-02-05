@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../style.css">
+
+    <title> The Name Collection </title>
+</head>
+
+<body style="background-color: #212f45;">
+
+    <div class="row p-0 m-0">
+        <div style="height: 100vh; overflow-y: auto; overflow-x: hidden; background-color: #1b3a4b;" class="col-md-2  ">
+            <div class=" d-flex flex-column flex-wrap justify-content-center">
+                <div class="py-5 text-center"><img src=" ../imgs/images/logo1.jpeg" width="100px" alt=""></div>
+                <div id="admin" class="nav-link active fw-bolder py-3"><span class="text-dark"> <i class="fab fa-first-order"></i></span > Orders</div>
+                    <!-- <div class="nav-link fw-bold py-3"> </div> -->
+                    <div id="adminproducts" class="nav-link fw-bold py-3"><span class="text-dark"> <i class="fab fa-product-hunt"></i></span> Products</div>
+                <div id="userdetails" class="nav-link fw-bold py-3"><span class="text-dark"> <i class="fal fa-users-crown"></i></span> User Details</div>
+                <div id="recylebin" class="nav-link fw-bold py-3"><span class="text-dark"> <i class="fal fa-trash-alt"></i></span> Recyle bin</div>
+
+
+            </div>
+        </div>
+
+        <div class="col-md-10">
+
+            <div class="main p-4">
+
+                <div class="d-flex flex-wrap justify-content-between rounded bglight shadow p-4">
+                    <div class="shadow btn-success m-2 rounded text-center p-4 fs-4 fw-bold txcolor">
+                        <div class="fs-3"><i class="fas fa-cart-arrow-down"></i></div>
+                        <div>Sales</div>
+                    </div>
+                    <div class="shadow btn-danger m-2 rounded text-center p-4 fs-5 fw-bold txcolor">
+                        <div class="fs-3"><i class="fal fa-users"></i></div>
+                        <div>Users</div>
+                    </div>
+                    <div class="shadow btn-primary m-2 rounded text-center p-4 fs-5 fw-bold txcolor">
+                        <div class="fs-3"><i class="fad fa-signal-alt-3"></i></div>
+                        <div>Products</div>
+                    </div>
+                    <div class="shadow btn-secondary m-2 rounded text-center p-4 fs-5 fw-bold txcolor">
+                        <div class="fs-3"><i class="fal fa-user-friends"></i></div>
+                        <div>Visitor</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="orders txcolor shadow mx-5 rounded" id="orders">
+                <div class="p-2 px-4 fs-3 d-flex justify-content-between">
+                    <div><i class="fal fa-file-edit"></i></div>
+                    <div><i class="far fa-times"></i></div>
+                </div>
+                <div class="p-3">
+                    <div class="d-flex flex-wrap justify-content-between fs-4">
+                        <div class="py-2"><i class="fal fa-user"></i> User Name</div>
+                        <div class="py-2"><i class="fal fa-envelope"></i> Email</div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between fs-4">
+
+                        <div class="py-2"><i class="fas fa-map-marker-alt"></i> Address</div>
+                        <div class="py-2"><i class="fab fa-pinterest"></i> Product UID</div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between fs-4">
+
+                        <div class="py-2"><i class="fal fa-bookmark"></i> Total</div>
+                        <div class="py-2"><i class="fas fa-dollar-sign"></i> Method</div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between fs-4">
+
+                        <div>
+
+                            <i class="fad fa-calendar-day"></i><span class="px-2" id="dates">25-5-2025</span>
+
+                        </div>
+
+                        <div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Delivered</label>
+                            </div>
+                        </div>
+                        <div class="fs-3">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script type="module" src="admin.js "></script>
+
+</body>
+
+
+</html>
